@@ -1,0 +1,7 @@
+$PoNumber = Read-Host "Enter PO Number"
+$Vendor = Read-Host "Vendor Name"
+$Description = Read-Host "Description of PO"
+
+$FilePath1 = "C:\Accounting\PO\2022\$PoNumber $Vendor $Description\"
+
+New-Item -type Directory -Path $FilePath1
